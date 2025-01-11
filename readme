@@ -18,3 +18,13 @@ For front end
 Step 1: cd into the client directory
 Step 2: run npm install
 Step 3: run npm dev
+
+Tech stack used:
+- Node.js
+- Express.js
+- MongoDB
+- React
+- Multer for file uploading
+- JWT for authentication (Token based authentication)
+- bcrypt for password hashing
+- React router dom for navigation
