@@ -1,0 +1,20 @@
+Prerequisites
+Ensure you have the following installed on your system:
+
+Node.js (v14 or later)
+MongoDB 
+Git (for cloning the repository)
+npm (comes with Node.js) or yarn
+
+
+Step 1: cd into the server directory
+Step 2: run npm istall
+Step 3: run node index.js
+
+Backend will start running
+
+For front end
+
+Step 1: cd into the client directory
+Step 2: run npm install
+Step 3: run npm dev
