@@ -14,7 +14,7 @@ export function LoginForm() {
     e.preventDefault();
     
     try {
-        const response = await axios.post('http://localhost:5000/auth/login', {
+        const response = await axios.post('https://claim-management-system-2.onrender.com/auth/login', {
             email,
             password
         });

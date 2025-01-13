@@ -18,7 +18,7 @@ export function PatientDashboard() {
   useEffect(() => {
     const fetchClaims = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/myclaims", {
+        const res = await axios.get("https://claim-management-system-2.onrender.com/myclaims", {
           headers: {
             Authorization: `Bearer ${token}`,
           },

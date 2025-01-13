@@ -30,7 +30,7 @@ export function ClaimForm() {
     data.append("uploadedDocument", file);
     const token = localStorage.getItem("token");
     try {
-      const response = await axios.post("http://localhost:5000/claim", data, {
+      const response = await axios.post("https://claim-management-system-2.onrender.com/claim", data, {
         headers: {
           Authorization: `Bearer ${token}`,
           "Content-Type": "multipart/form-data",

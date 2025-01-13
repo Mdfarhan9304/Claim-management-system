@@ -30,7 +30,7 @@ export function ClaimModal({ claim, onClose, userType }: ClaimModalProps) {
       };
 
       const res = await axios.patch(
-        `http://localhost:5000/claim/${claim._id}`,
+        `https://claim-management-system-2.onrender.com/claim/${claim._id}`,
         payload
       );
 
@@ -83,7 +83,7 @@ export function ClaimModal({ claim, onClose, userType }: ClaimModalProps) {
           <div>
             <label className="font-medium text-gray-700">Document</label>
             <a
-              href={`http://localhost:5000/${claim.uploadedDocument}`}
+              href={`https://claim-management-system-2.onrender.com/${claim.uploadedDocument}`}
               target="_blank"
               rel="noopener noreferrer"
               className="text-indigo-600 hover:text-indigo-500 block"

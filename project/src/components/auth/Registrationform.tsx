@@ -14,14 +14,14 @@ export function RegistrationForm() {
     e.preventDefault();
     
     try {
-        const response = await axios.post('http://localhost:5000/auth/register', {
+        const response = await axios.post('https://claim-management-system-2.onrender.com/auth/register', {
             email,
             password,
             role
         });
         
         console.log(response.data);
-        navigate(`/${role}/dashboard`);  // Navigate based on the selected role
+        navigate(`/${role}/login`);  
     } catch (error) {
         console.error('Registration failed:', error);
     }
