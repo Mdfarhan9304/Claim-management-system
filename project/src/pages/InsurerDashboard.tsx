@@ -5,35 +5,12 @@ import { Claim } from "@/types";
 import { Search, Filter } from "lucide-react";
 import axios from "axios";
 
-// Mock data
-const mockClaims: Claim[] = [
-  {
-    id: "CLM001",
-    patientName: "John Doe",
-    email: "john@example.com",
-    amount: 1500,
-    description: "Medical consultation and tests",
-    status: "pending",
-    submissionDate: "2024-03-15",
-  },
-  {
-    id: "CLM002",
-    patientName: "Jane Smith",
-    email: "jane@example.com",
-    amount: 2500,
-    description: "Surgery",
-    status: "approved",
-    submissionDate: "2024-03-10",
-    approvedAmount: 2000,
-    insurerComments: "Partially approved based on policy coverage",
-  },
-];
+
 
 export function InsurerDashboard() {
   const [selectedClaim, setSelectedClaim] = useState<Claim | null>(null);
   const [statusFilter, setStatusFilter] = useState<string>("All");
   const [data, setData] = useState<Claim[]>([]);
-  const [searchTerm, setSearchTerm] = useState<string>("");
 
   useEffect(() => {
     const fetchClaims = async () => {
